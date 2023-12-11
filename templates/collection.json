@@ -19,9 +19,29 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1510cbbd-ee8f-4465-876f-d1ba22242e7f": {
+      "type": "Collection-banner",
+      "settings": {
+      }
+    },
+    "0c67a748-165a-4eb5-a924-91d802151ba6": {
+      "type": "Collection-richtext",
+      "settings": {
+        "title": "",
+        "richtext": ""
+      }
+    },
+    "e192955b-1574-4ac4-b18d-d2bc04c62f88": {
+      "type": "Collection-Faq",
+      "settings": {
+      }
     }
   },
   "order": [
-    "product-grid"
+    "product-grid",
+    "1510cbbd-ee8f-4465-876f-d1ba22242e7f",
+    "0c67a748-165a-4eb5-a924-91d802151ba6",
+    "e192955b-1574-4ac4-b18d-d2bc04c62f88"
   ]
 }
