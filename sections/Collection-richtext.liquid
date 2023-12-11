@@ -1,0 +1,41 @@
+<div class="richtext_section">
+  <div class="page-width text-center">
+    {% if section.settings.title != blank %}
+      <h2>{{ section.settings.title }}</h2>
+    {% endif %}
+    {% if section.settings.richtext != blank %}
+      <div class="text_content">
+        {{ section.settings.richtext }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Collection Richtext",
+  "class":"col-section",
+  "settings": [
+  {
+    "type":"text",
+    "id":"title",
+    "label":"Enter Title here"
+  },
+  {
+    "type":"richtext",
+    "id":"richtext",
+    "label":"Enter content Here"
+  }
+  ],
+  "presets":[
+    {
+      "name":"Collection Richtext"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
