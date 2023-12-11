@@ -28,8 +28,8 @@
     "0c67a748-165a-4eb5-a924-91d802151ba6": {
       "type": "Collection-richtext",
       "settings": {
-        "title": "",
-        "richtext": ""
+        "title": "{{ collection.metafields.custom.title.value }}",
+        "richtext": "{{ collection.metafields.custom.content | metafield_tag }}"
       }
     },
     "e192955b-1574-4ac4-b18d-d2bc04c62f88": {
