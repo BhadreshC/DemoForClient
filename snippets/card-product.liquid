@@ -35,6 +35,23 @@
       assign ratio = 1
     endif
   -%}
+  <form method="post" action="/cart/add">
+  <div 
+    class="wcns_prd_subscription_custom_section" 
+    data-handle="{{ card_product.handle }}" 
+    data-subscription-plan="{{ card_product.selling_plan_groups.size }}"
+    data-wcnspid="{{ card_product.id }}"></div>
+{% if card_product.selling_plan_groups.size > 0 %}
+  {% render 'th_col_ext', product: card_product %} 
+{% endif %}
+  <select name="id">
+      {% for variant in card_product.variants %}
+        <option value="{{ variant.id }}">{{ variant.title }}</option>
+      {% endfor %}
+    </select>
+    <input min="1" type="number" id="quantity" name="quantity" value="1"/>
+    <input type="submit" value="Add to cart" class="btn addtocart_button" />
+</form>
   <div class="card-wrapper product-card-wrapper underline-links-hover">
     <div
       class="
